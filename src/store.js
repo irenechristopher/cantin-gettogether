@@ -1,4 +1,5 @@
 import {createStore} from 'redux'
+import { devToolsEnhancer } from 'redux-devtools-extension'
 import {combineReducers} from 'redux'
 import CountReducer from './reducers/CountReducer'
 import NavigationReducer from './reducers/NavigationReducer'
@@ -8,12 +9,6 @@ const reducer = combineReducers({
     NavigationReducer
 });
 
-const initialState = {
-    CountReducer: {count: 123, wish_value: 12},
-    NavigationReducer: {homePage: false, eventPage: false }
-};
-
-
-let store = createStore(reducer, initialState);
+let store = createStore(reducer, devToolsEnhancer());
 
 export default store;

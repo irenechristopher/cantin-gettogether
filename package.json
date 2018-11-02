@@ -30,6 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "redux-devtools-extension": "^2.13.5"
   }
 }
